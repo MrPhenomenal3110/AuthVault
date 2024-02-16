@@ -1,15 +1,16 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 
-const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBSE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBSE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBSE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBSE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBSE_APP_ID
-});
+const firebaseConfig = {
+    apiKey: "AIzaSyAVzRf7jCHDhenKrqYZkHJkxPivjlpuvq0",
+    authDomain: "authvault-development.firebaseapp.com",
+    projectId: "authvault-development",
+    storageBucket: "authvault-development.appspot.com",
+    messagingSenderId: "300521468593",
+    appId: "1:300521468593:web:b2d564a1265b7bcfa6a890"
+};
 
-export const auth = app.auth();
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-export default app;
+export default auth;
