@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "hommepage":"https://mrphenomenal3110.github.io/AuthVault",
+  "homepage":"https://mrphenomenal3110.github.io/AuthVault",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d dist",
