@@ -29,7 +29,7 @@ export default function ForgotPassword() {
 
   return (
     <div className='w-full h-full flex flex-row justify-center items-center bg-gradient-to-t from-cyan-300 to-green-400'>
-        <img className='bg-white p-6 shadow-2xl rounded-l-3xl z-10 h-3/4 -mx-6' src="/forgot-password.avif" alt="" />
+        <img className='bg-white p-6 shadow-2xl rounded-l-3xl z-10 h-3/4 -mx-6' src="./forgot-password.avif" alt="" />
         <div className='w-1/2 h-3/4 p-4 flex flex-col justify-around items-center shadow-2xl bg-gradient-to-t from-cyan-50 to-green-50 rounded-3xl'>
             <div className='w-full h-full flex flex-col rounded-3xl justify-center items-center'>
             <br />

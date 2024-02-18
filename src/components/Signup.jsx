@@ -40,7 +40,7 @@ function Signup() {
 
   return (
     <div className='w-full h-full flex flex-row justify-center items-center bg-gradient-to-t from-slate-600 to-green-400'>
-        <img className='bg-white p-6 shadow-2xl rounded-l-3xl z-10 h-3/4 -mx-6' src="/sign-up.png" alt="" />
+        <img className='bg-white p-6 shadow-2xl rounded-l-3xl z-10 h-3/4 -mx-6' src="./sign-up.png" alt="" />
         <div className='w-1/2 h-3/4 p-4 flex flex-col justify-around items-center shadow-2xl bg-green-50 rounded-3xl'>
             <div className='w-full h-full flex flex-col rounded-3xl justify-center items-center'>
             <br />

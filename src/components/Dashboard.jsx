@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AuthProvider, { useAuth } from '../context/AuthContext'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
 
@@ -34,7 +34,7 @@ export default function Dashboard() {
 
     return (
     <AuthProvider>
-        <div className='w-full h-full flex flex-row justify-center items-center bg-gradient-to-t from-cyan-300 to-violet-400' style={{ backgroundImage: `url(${background})` }}>
+        <div className='w-full h-full flex flex-row justify-center items-center bg-gradient-to-t from-cyan-300 to-violet-400' style={{ backgroundImage: `url(./${background})` }}>
             <div className='h-full w-full flex justify-center items-center'>
                 <div className='shadow-2xl z-10 bg-yellow-50 rounded-2xl p-4 h-max absolute top-1/4 w-3/4 max-w-md flex flex-col justify-between items-center'>
                     {error && <span className='text-red-600 m-4 bg-red-300 max-w-sm px-4 p-y-2 rounded'>{error}</span>}
