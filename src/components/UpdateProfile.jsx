@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef, useState } from 'react';
 import { useAuth } from '../context/AuthContext'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function ForgotPassword() {
     const emailRef = useRef();
@@ -9,7 +9,6 @@ export default function ForgotPassword() {
     const [error, setError] = useState('');
     const [message, setMessage] = useState();
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
 
     async function handleSubmit(e){
         e.preventDefault();
