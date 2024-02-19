@@ -40,11 +40,11 @@ function Signup() {
 
   return (
     <div className='w-full h-full flex flex-row justify-center items-center bg-gradient-to-t from-slate-600 to-green-400'>
-        <img className='bg-white p-6 shadow-2xl rounded-l-3xl z-10 h-3/4 -mx-6' src="./sign-up.png" alt="" />
-        <div className='w-1/2 h-3/4 p-4 flex flex-col justify-around items-center shadow-2xl bg-green-50 rounded-3xl'>
-            <div className='w-full h-full flex flex-col rounded-3xl justify-center items-center'>
+        <img className='bg-white p-0 md:p-6 shadow-2xl rounded-l-3xl z-10 w-0 h-0 sm:w-auto sm:h-3/4 mx-0 sm:-mx-2' src="./sign-up.png" alt="" />
+        <div className='w-3/4 h-fit sm:w-1/2 sm:h-3/4 p-4 flex flex-col justify-around items-center shadow-2xl bg-green-50 sm:rounded-r-3xl rounded-3xl'>
+            <div className='w-full h-full flex flex-col rounded-3xl sm:rounded-r-3xl justify-center items-center'>
             <br />
-                <h1 className='text-3xl font-mono'><i className="mx-4 fa-solid fa-users"></i>Sign Up</h1>
+                <h1 className='text-xl sm:text-3xl font-mono'><i className="mx-4 fa-solid fa-users"></i>Sign Up</h1>
                 <br />
                 {error && <span className='text-red-600 bg-red-300 px-4 p-y-2 rounded'>{error}</span>}
                 <form onSubmit={handleSubmit} className='flex flex-col justify-around items-center w-3/4' action="">
